@@ -1,0 +1,62 @@
+html {
+	background: url(loneSprout.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.menuItem {
+	-webkit-border-radius: 10px;
+	
+	
+	text-align: center;
+	width: 150px;
+	font-size: 20px;
+	
+	}
+	
+.menuItem a:link, .menuItem a:visited {
+	text-decoration:none;
+	color: #247F5A ;
+	
+	}
+	
+	.menuItem:hover, .menuItem:focus{
+	box-shadow: 1px 1px 2px 3px rgba(36,127,90,.5); 
+	
+	}
+	
+
+	
+.timeLabel {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	text-align: center;
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	font-size: 19px;
+	color: white;
+	background: #247F5A;
+	padding: 10px;
+	width: 160px;
+	opacity: .85;
+	
+	transition: opacity 4s ease;
+	
+	-webkit-box-shadow: 2px 2px 4px 5px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    2px 2px 4px 5px #ccc;  /* Firefox 3.5 - 3.6 */
+	box-shadow:         2px 2px 4px 5px #000;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	}
+	
+.timeLabel:focus {
+	
+	opacity: 0;
+	}
+	
+.arrow {
+	position: relative;
+	top: 10px;
+}
