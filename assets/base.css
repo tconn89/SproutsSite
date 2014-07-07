@@ -1,4 +1,4 @@
-#main {
+html#main {
 	background: url(loneSprout.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -6,6 +6,9 @@
 	background-size: cover;
 }
 
+ul {
+	border: none;
+}
 .menuItem {
 	-webkit-border-radius: 10px;
 	
@@ -13,6 +16,8 @@
 	text-align: center;
 	width: 150px;
 	font-size: 20px;
+	font-family: Segoe UI;
+	font-style: italic;
 	
 	}
 	
@@ -22,11 +27,102 @@
 	
 	}
 	
+:focus {
+	outline: 0;
+}
+	
 	.menuItem:hover, .menuItem:focus{
 	box-shadow: 1px 1px 2px 3px rgba(36,127,90,.5); 
 	
 	}
 	
+div.centerDiv {
+		
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	margin-top: -250px; /* Half the height */
+	margin-left: -250px; /* Half the width */
+		
+	}
+	
+	#wrapper td {
+   vertical-align: middle;
+   text-align: center;
+}
+
+#aboutDiv, #gallery, #subscribe {
+	
+	display:none;
+	
+	}
+#aboutDiv:target {
+	
+	display: block;
+	width: 200px;
+	color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: url(blurredGreen.png);
+	
+/*	-webkit-filter: blur(3px);
+	-webkit-transition: -webkit-filter 2.0s 1.0s ;
+   	-webkit-filter: none;
+	*/
+	
+	-webkit-animation: myfirst 3s; /* Chrome, Safari, Opera */
+	
+	
+	}
+
+#gallery:target, .galleryPic {
+	display: block;
+	width: 200px;
+}
+
+#subscribe:target {
+	display: block;
+	position:absolute;
+	font-size: 14px;
+	left:100px;
+	border: 2px solid;
+	color: #247F5A ;
+	-webkit-animation: slideIn 3s; /* Chrome, Safari, Opera */
+	
+}
+
+@-webkit-keyframes slideIn {
+   0% {
+       
+    left: -100px;
+  }
+
+
+  100% {
+    left: 100px;
+      
+  }
+}
+	
+@-webkit-keyframes myfirst {
+   0% {
+       
+    -webkit-filter: blur(4px);
+  }
+
+
+  100% {
+    -webkit-filter: none;
+      
+  }
+}
+.delayedEffect {
+	display: none;
+
+	}
+
+
 
 	
 .timeLabel {
